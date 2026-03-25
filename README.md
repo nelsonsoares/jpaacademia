@@ -12,6 +12,8 @@
 
 This project was developed as part of a study on JPA (Java Persistence API) and database relationships.
 
+This project was proposed by the **DIO** Java formation on the module: **Knowing Spring DataJPA in Practice**.
+
 ## 🚀 Technologies
 
 - **Java 25**
