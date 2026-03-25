@@ -59,4 +59,4 @@ Example input: `"15/03/1984"`.
 
 ---
 
-Developed with 💙 by [Your Name]
+Developed with 💙 by Nelson Soares
