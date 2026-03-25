@@ -3,6 +3,7 @@ package com.jpaacademia.jpaacademia.controllers;
 import com.jpaacademia.jpaacademia.dtos.AvaliacaoFisicaDTO;
 import com.jpaacademia.jpaacademia.models.AvaliacaoFisica;
 import com.jpaacademia.jpaacademia.service.interfaces.IAvaliacaoFisicaService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,7 @@ public class AvaliacaoFisicaController {
     }
 
     @PostMapping
-    public AvaliacaoFisica create(@RequestBody AvaliacaoFisicaDTO avaliacaoFisica) {
+    public AvaliacaoFisica create(@Valid @RequestBody AvaliacaoFisicaDTO avaliacaoFisica) {
         return avaliacaoFisicaService.create(avaliacaoFisica);
     }
 

@@ -3,6 +3,7 @@ package com.jpaacademia.jpaacademia.controllers;
 import com.jpaacademia.jpaacademia.dtos.MatriculaDTO;
 import com.jpaacademia.jpaacademia.models.Matricula;
 import com.jpaacademia.jpaacademia.service.interfaces.IMatriculaService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,7 @@ public class MatriculaController {
     }
 
     @PostMapping
-    public Matricula create(@RequestBody MatriculaDTO alunoId) {
+    public Matricula create(@Valid @RequestBody MatriculaDTO alunoId) {
         return matriculaService.create(Long.parseLong(alunoId.alunoId()));
     }
 
